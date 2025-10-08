@@ -1,0 +1,12 @@
+Profilbild-Information
+
+Aktuell wird eine SVG-Platzhalter-Datei verwendet: marius-achilles.svg
+
+Um dein echtes Profilbild zu verwenden:
+1. Ersetze marius-achilles.svg durch dein Bild
+2. Benenne es um zu: marius-achilles.jpg (oder .png)
+3. Empfohlene Größe: 400x400px oder größer
+4. Format: Quadratisch oder Portrait
+5. Das Bild wird automatisch rund dargestellt
+
+Das Bild wird unter "Über mich" angezeigt.
