@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Über mich – MacFly</title>
+<meta name="description" content="Marius Achilles - Jahrzehntelange Erfahrung in Modellflug, 3D-Druck, Elektronik und PC-Service. Professionelle Dienstleistungen aus einer Hand.">
+<meta name="author" content="MacFly">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#0b1220;--bg-elev:#121a2b;--text:#e6edf3;--muted:#9fb0c3;--primary:#5cc8ff;--accent:#a78bfa;--ok:#34d399;--warn:#fbbf24;--danger:#f87171;--maxw:960px}
+:root.light{--bg:#ffffff;--bg-elev:#f7fafc;--text:#0b1220;--muted:#445066}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;z-index:10;background:rgba(11,18,32,.8);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid #1e293b}
+header>nav,main,footer{max-width:var(--maxw);margin:0 auto}
+header h1{font-size:18px;margin:0;padding:12px 16px}
+nav{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:0 16px 12px}
+.nav-links{display:flex;gap:12px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px}
+nav a:hover{color:var(--text);background:var(--bg-elev)}
+.cta{color:#0b1220;background:var(--primary);font-weight:600}
+main{padding:24px 16px}
+section{padding:32px 0;border-bottom:1px solid #1f2a44}
+section:last-child{border-bottom:none}
+section h2{font-size:24px;margin:0 0 12px}
+section p{margin:0 0 12px;color:var(--muted)}
+ul{margin:0;padding-left:18px}
+footer{border-top:1px solid #1e293b;color:var(--muted);padding:24px 16px}
+.grid{display:grid;gap:16px}
+@media(min-width:720px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--bg-elev);border:1px solid #1f2a44;border-radius:12px;padding:16px}
+.tag{display:inline-block;background:#0e1729;border:1px solid #22324f;color:var(--muted);padding:4px 8px;border-radius:999px;font-size:12px;margin:4px 4px 0 0}
+.about-hero{display:grid;gap:32px;align-items:center;text-align:center;padding:48px 0}
+@media(min-width:720px){.about-hero{grid-template-columns:1fr 1fr;text-align:left}}
+.about-text h1{font-size:36px;margin:0 0 16px;color:var(--text)}
+.about-text p{font-size:18px;margin:0 0 24px;color:var(--muted)}
+.profile-large{display:flex;justify-content:center;margin:24px 0}
+.profile-image-large{width:300px;height:300px;border-radius:50%;object-fit:cover;object-position:center;border:4px solid var(--primary);box-shadow:0 12px 48px rgba(0,0,0,.4);cursor:pointer;transition:transform 0.3s ease, box-shadow 0.3s ease}
+.profile-image-large:hover{transform:scale(1.05);box-shadow:0 16px 64px rgba(0,0,0,.6)}
+.lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;cursor:pointer}
+.lightbox img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:90%;max-height:90%;border-radius:12px;box-shadow:0 20px 80px rgba(0,0,0,0.8)}
+.lightbox-close{position:absolute;top:20px;right:30px;color:white;font-size:40px;cursor:pointer;z-index:1001}
+.experience-grid{display:grid;gap:24px;margin:32px 0}
+@media(min-width:720px){.experience-grid{grid-template-columns:repeat(2,1fr)}}
+.experience-card{background:var(--bg-elev);border:1px solid #1f2a44;border-radius:12px;padding:24px;text-align:center}
+.experience-card h3{color:var(--primary);margin:0 0 12px}
+.experience-card p{color:var(--muted);margin:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.theme-toggle{border:1px solid #22324f;background:#0e1729;color:var(--text);border-radius:8px;padding:6px 10px;cursor:pointer}
+.light code,.light kbd,.light pre{background:#f0f4f8;border-color:#d8e0ea}
+</style>
+</head>
+<body>
+<header>
+<h1>Über mich</h1>
+<nav>
+<div class="nav-links">
+<a href="index.html">Start</a>
+<a href="index.html#services">Leistungen</a>
+<a href="about.html">Über mich</a>
+<a href="index.html#projects">Projekte</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#contact">Kontakt</a>
+<a href="impressum.html">Impressum</a>
+</div>
+<div>
+<button id="themeToggle" class="theme-toggle" aria-pressed="false">☀️/🌙</button>
+<a class="cta" href="index.html#contact">Kontakt aufnehmen</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="about-hero">
+<div class="about-text">
+<h1>Marius Achilles</h1>
+<p>Seit Jahrzehnten im Modellflug und mit viel Praxis in Werkstatt und Elektronik unterwegs. Ich kombiniere präzises Arbeiten mit einem Auge fürs Detail – ob in der Luft, am Drucker oder am Lötkolben.</p>
+<p>Meine Leidenschaft für Technik und Präzision hat mich zu einem vielseitigen Dienstleister gemacht, der komplexe Projekte mit jahrzehntelanger Erfahrung meistert.</p>
+</div>
+<div class="profile-large">
+<img src="images/marius-achilles.jpg" alt="Marius Achilles - Klicken zum Vergrößern" class="profile-image-large" id="profileImage">
+</div>
+</section>
+
+<section>
+<h2>Meine Expertise</h2>
+<div class="experience-grid">
+<div class="experience-card">
+<h3>Modellflug & Drohnen</h3>
+<p>Über 20 Jahre Erfahrung im Modellflug. Von der Konstruktion bis zum präzisen Flug – diese Expertise ermöglicht mir außergewöhnliche Luftaufnahmen aus Perspektiven, die sonst unerreichbar sind.</p>
+</div>
+<div class="experience-card">
+<h3>3D-Druck & Konstruktion</h3>
+<p>Eigene Werkstatt mit modernster 3D-Druck-Technologie. Von der CAD-Konstruktion über Materialberatung bis zum fertigen Teil – alles aus einer Hand.</p>
+</div>
+<div class="experience-card">
+<h3>Elektronik & Reparatur</h3>
+<p>Jahrzehntelange Erfahrung in Elektronik-Reparatur und -Entwicklung. Schaltplan-Erstellung, Layout-Design und professionelle Inbetriebnahme.</p>
+</div>
+<div class="experience-card">
+<h3>PC-Service & Wartung</h3>
+<p>Umfassender PC-Service von Hardware-Diagnose über Software-Installation bis zur Systemoptimierung. Desktop und Laptop gleichermaßen.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Mein Arbeitsplatz</h2>
+<p>In meiner eigenen Werkstatt kombiniere ich traditionelle Handwerkskunst mit modernster Technologie. Hier entstehen präzise 3D-Drucke, werden elektronische Baugruppen entwickelt und PCs repariert.</p>
+<p>Die jahrzehntelange Erfahrung im Modellflug hat mir ein besonderes Gespür für Präzision und Detailarbeit gegeben – Eigenschaften, die in allen meinen Dienstleistungen zum Tragen kommen.</p>
+</section>
+
+<section>
+<h2>Warum MacFly?</h2>
+<p>Der Name "MacFly" steht für Innovation, Präzision und Zuverlässigkeit. Wie der berühmte Zeitreisende aus "Zurück in die Zukunft" verbinde ich traditionelle Handwerkskunst mit modernster Technologie.</p>
+<p>Mein Ziel ist es, komplexe technische Herausforderungen mit Kreativität und jahrzehntelanger Erfahrung zu meistern – immer mit einem Auge fürs Detail und dem Anspruch auf höchste Qualität.</p>
+</section>
+</main>
+
+<footer>
+<p>© 2025 · <a href="impressum.html">Impressum</a></p>
+</footer>
+
+<!-- Lightbox für Profilbild -->
+<div id="lightbox" class="lightbox">
+<span class="lightbox-close">&times;</span>
+<img id="lightboxImage" src="" alt="Marius Achilles - Großansicht">
+</div>
+
+<script>
+(function(){
+try{var pref=localStorage.getItem('theme');if(pref==='light'){document.documentElement.classList.add('light')}}catch(e){}
+var btn=document.getElementById('themeToggle');
+if(btn){btn.addEventListener('click',function(){var light=document.documentElement.classList.toggle('light');try{localStorage.setItem('theme',light?'light':'dark')}catch(e){};btn.setAttribute('aria-pressed',String(light))})}
+
+// Lightbox für Profilbild
+var profileImage=document.getElementById('profileImage');
+var lightbox=document.getElementById('lightbox');
+var lightboxImage=document.getElementById('lightboxImage');
+var lightboxClose=document.querySelector('.lightbox-close');
+
+profileImage.addEventListener('click',function(){
+lightboxImage.src=profileImage.src;
+lightbox.style.display='block';
+document.body.style.overflow='hidden';
+});
+
+lightboxClose.addEventListener('click',function(){
+lightbox.style.display='none';
+document.body.style.overflow='auto';
+});
+
+lightbox.addEventListener('click',function(e){
+if(e.target===lightbox){
+lightbox.style.display='none';
+document.body.style.overflow='auto';
+}
+});
+
+document.addEventListener('keydown',function(e){
+if(e.key==='Escape'&&lightbox.style.display==='block'){
+lightbox.style.display='none';
+document.body.style.overflow='auto';
+}
+});
+})();
+</script>
+</body>
+</html>
