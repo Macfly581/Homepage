@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D-Druck & Konstruktion – MacFly</title>
+<meta name="description" content="Professioneller 3D-Druck Service: CAD-Konstruktion, Materialberatung und präziser Druck in der eigenen Werkstatt. Von der Idee bis zum fertigen Teil.">
+<meta name="author" content="MacFly">
+<meta property="og:title" content="3D-Druck & Konstruktion – MacFly">
+<meta property="og:description" content="Professioneller 3D-Druck Service: CAD-Konstruktion, Materialberatung und präziser Druck in der eigenen Werkstatt.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://macfly581.github.io/Homepage/3d-druck.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon.png">
+<style>
+:root{--bg:#0b1220;--bg-elev:#121a2b;--text:#e6edf3;--muted:#9fb0c3;--primary:#5cc8ff;--accent:#a78bfa;--ok:#34d399;--warn:#fbbf24;--danger:#f87171;--maxw:960px}
+:root.light{--bg:#ffffff;--bg-elev:#f7fafc;--text:#0b1220;--muted:#445066}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;z-index:10;background:rgba(11,18,32,.8);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid #1e293b}
+header>nav,main,footer{max-width:var(--maxw);margin:0 auto}
+header h1{font-size:18px;margin:0;padding:12px 16px}
+nav{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:0 16px 12px}
+.nav-links{display:flex;gap:12px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px}
+nav a:hover{color:var(--text);background:var(--bg-elev)}
+.cta{color:#0b1220;background:var(--primary);font-weight:600}
+main{padding:24px 16px}
+section{padding:32px 0;border-bottom:1px solid #1f2a44}
+section:last-child{border-bottom:none}
+section h2{font-size:24px;margin:0 0 12px}
+section p{margin:0 0 12px;color:var(--muted)}
+ul{margin:0;padding-left:18px}
+footer{border-top:1px solid #1e293b;color:var(--muted);padding:24px 16px}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:1fr}
+@media(min-width:720px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--bg-elev);border:1px solid #1f2a44;border-radius:12px;padding:16px}
+.tag{display:inline-block;background:#0e1729;border:1px solid #22324f;color:var(--muted);padding:4px 8px;border-radius:999px;font-size:12px;margin:4px 4px 0 0}
+.hero{display:grid;gap:12px;align-items:center}
+.hero h1{font-size:28px;margin:0}
+.hero p{margin:0;color:var(--muted)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.about-content{display:grid;gap:24px;align-items:center}
+@media(min-width:720px){.about-content{grid-template-columns:1fr auto}}
+.about-text{flex:1}
+.about-image{display:flex;justify-content:center}
+.profile-image{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center;border:3px solid var(--primary);box-shadow:0 8px 32px rgba(0,0,0,.3);display:block;background:var(--bg-elev)}
+.printer-image{width:100%;max-width:600px;height:auto;border-radius:12px;object-fit:cover;box-shadow:0 8px 32px rgba(0,0,0,.3);display:block;background:var(--bg-elev)}
+code,kbd,pre{font-family:ui-monospace,Menlo,Consolas,monospace;background:#0e1729;border:1px solid #22324f;border-radius:8px;padding:2px 6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.theme-toggle{border:1px solid #22324f;background:#0e1729;color:var(--text);border-radius:8px;padding:6px 10px;cursor:pointer}
+.light code,.light kbd,.light pre{background:#f0f4f8;border-color:#d8e0ea}
+</style>
+</head>
+<body>
+<header>
+<h1>3D-Druck & Konstruktion</h1>
+<nav>
+<div class="nav-links">
+<a href="index.html">Startseite</a>
+<a href="about.html">Über mich</a>
+<a href="index.html#projects">Projekte</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#contact">Kontakt</a>
+<a href="impressum.html">Impressum</a>
+</div>
+<div>
+<button id="themeToggle" class="theme-toggle" aria-pressed="false">☀️/🌙</button>
+<a class="cta" href="index.html#contact">Kontakt aufnehmen</a>
+</div>
+</nav>
+</header>
+<main id="top">
+<section class="hero">
+<h1>3D-Druck & Konstruktion</h1>
+<p>Von der Idee bis zum fertigen Teil: Professionelle CAD-Konstruktion, Materialberatung und präziser Druck in der eigenen Werkstatt.</p>
+<div class="hero-actions">
+<a class="cta" href="#services">Leistungen ansehen</a>
+<a href="index.html">Zurück zur Startseite</a>
+</div>
+</section>
+
+<section id="printer-showcase">
+<h2>Mein 3D-Drucker</h2>
+<div class="about-content">
+<div class="about-text">
+<p>Hier ist mein professioneller 3D-Drucker, mit dem ich präzise und hochwertige Teile für verschiedene Anwendungen erstelle. Die Werkstatt ist mit modernster Technologie ausgestattet, um optimale Ergebnisse zu gewährleisten.</p>
+<p>Mit jahrelanger Erfahrung im 3D-Druck kann ich Ihnen bei der Umsetzung Ihrer Projekte helfen – von der ersten Skizze bis zum fertigen Produkt.</p>
+<div><span class="tag">FDM-Druck</span><span class="tag">PLA/PETG/ABS</span><span class="tag">CAD-Konstruktion</span><span class="tag">Materialberatung</span></div>
+</div>
+<div class="about-image">
+<img src="images/3d-printer.jpg" alt="Mein 3D-Drucker in der Werkstatt" class="printer-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+<div style="display:none; text-align:center; padding:40px; background:var(--bg-elev); border-radius:12px; border:2px dashed var(--muted);">
+<p>3D-Drucker Bild wird hier angezeigt</p>
+<p style="font-size:14px; color:var(--muted);">Bitte fügen Sie Ihr 3D-Drucker Bild als "3d-printer.jpg" in den images-Ordner ein</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2>3D-Druck Leistungen</h2>
+<div class="grid grid-2">
+<article class="card">
+<h3>CAD-Konstruktion</h3>
+<p>Professionelle 3D-Modellierung und Konstruktion nach Ihren Vorgaben. Von einfachen Ersatzteilen bis zu komplexen Baugruppen.</p>
+<div><span class="tag">Fusion 360</span><span class="tag">SolidWorks</span><span class="tag">FreeCAD</span></div>
+</article>
+<article class="card">
+<h3>Materialberatung</h3>
+<p>Auswahl des optimalen Materials für Ihre Anwendung: PLA für Prototypen, PETG für mechanische Teile, ABS für hohe Temperaturen.</p>
+<div><span class="tag">PLA</span><span class="tag">PETG</span><span class="tag">ABS</span><span class="tag">TPU</span></div>
+</article>
+<article class="card">
+<h3>Druck & Nachbearbeitung</h3>
+<p>Präziser Druck mit verschiedenen Auflösungen und professionelle Nachbearbeitung für optimale Oberflächenqualität.</p>
+<div><span class="tag">0.1mm Schicht</span><span class="tag">Support-Entfernung</span><span class="tag">Schleifen</span></div>
+</article>
+<article class="card">
+<h3>Reparatur & Wartung</h3>
+<p>Wartung und Reparatur von 3D-Druckern, Kalibrierung und Optimierung für beste Druckergebnisse.</p>
+<div><span class="tag">Kalibrierung</span><span class="tag">Wartung</span><span class="tag">Reparatur</span></div>
+</article>
+</div>
+</section>
+
+<section id="process">
+<h2>Mein Arbeitsprozess</h2>
+<div class="grid grid-3">
+<article class="card">
+<h3>1. Beratung</h3>
+<p>Gemeinsam besprechen wir Ihre Anforderungen und finden die beste Lösung für Ihr Projekt.</p>
+</article>
+<article class="card">
+<h3>2. Konstruktion</h3>
+<p>Erstellung des 3D-Modells mit professionellen CAD-Tools nach Ihren Vorgaben.</p>
+</article>
+<article class="card">
+<h3>3. Druck & Lieferung</h3>
+<p>Präziser Druck in der eigenen Werkstatt und termingerechte Lieferung des fertigen Teils.</p>
+</article>
+</div>
+</section>
+
+<section id="contact">
+<h2>Kontakt für 3D-Druck Anfragen</h2>
+<p>Haben Sie ein Projekt, das 3D-Druck erfordert? Schreiben Sie mir gern an <a href="mailto:M.Achilles81@gmail.com">M.Achilles81@gmail.com</a> oder auf GitHub unter <a href="https://github.com/macfly581" target="_blank" rel="noopener noreferrer">@macfly581</a>.</p>
+<p>Gerne berate ich Sie kostenlos zu Ihrem Projekt und erstelle ein unverbindliches Angebot.</p>
+</section>
+</main>
+<footer>
+<p>© 2025 · <a href="impressum.html">Impressum</a></p>
+</footer>
+<script>
+(function(){
+try{var pref=localStorage.getItem('theme');if(pref==='light'){document.documentElement.classList.add('light')}}catch(e){}
+var btn=document.getElementById('themeToggle');
+if(btn){btn.addEventListener('click',function(){var light=document.documentElement.classList.toggle('light');try{localStorage.setItem('theme',light?'light':'dark')}catch(e){};btn.setAttribute('aria-pressed',String(light))})}
+})();
+</script>
+</body>
+</html>
